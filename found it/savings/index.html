@@ -12,12 +12,14 @@
 body{
 background-image: linear-gradient(rgba(32, 32, 32, 0.7), rgba(38, 38, 38, 0.7)), url(img3.jpg);
 background-repeat: no-repeat;
-background-position: fixed;
 background-size: cover;
+background-attachment: fixed;
 color: white;
 height: 100%;
 margin:0px;
 padding:0px;
+    font-family: 'Courier';
+
 }
 .container {
             position: fixed;
@@ -25,6 +27,7 @@ padding:0px;
             width: 100%;
             display: none;
             justify-content: center;
+            align-items: center;
             z-index: 4545454;
 }
 
@@ -37,12 +40,11 @@ padding:0px;
         }
 .details{
     height: 40vh;
-    background: rgba(27, 24, 24, 0.8);
+    background: rgba(27, 24, 24, 0.9);
     margin-top: -20px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .details i{
     font-size: 100px;
@@ -94,8 +96,12 @@ margin-top: 80px;
 font-size: 15px;
 }
 .main{
-    position: relative;
-    
+    position: absolute;
+    margin-top: 90px;
+}
+.savings h2{
+        font-family: 'Bahnschrift SemiBold';
+
 }
     </style>
 </head>
@@ -148,7 +154,7 @@ font-size: 15px;
             </div>
         
             <div class="addsavings">
-                <span>Add Savings Account</span>
+                <span>Add Account</span>
                 <i class="fa fa-plus"></i>
             </div>
         </div>

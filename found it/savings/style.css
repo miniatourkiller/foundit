@@ -1,10 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 body{
         background-image: linear-gradient(rgba(32, 32, 32, 0.7), rgba(38, 38, 38, 0.7)), url(img3.jpg);
+        background-attachment: fixed;
             background-position: center;
                 background-size: cover;
                 color: white;
@@ -144,8 +144,48 @@ span{
 .savings{
     height: 30vh;
     width: 100%;
-    background-color: rgba(40, 39, 39, 0.8);
+    background-color: rgba(40, 39, 39, 0.9);
     margin-top:-10px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+}
+.main{
+    position: absolute;
+    margin-top: 120px;
+    height: 100%;
+    width: 100%;
+}
+.delete{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px black;
+}
+.menushowed{
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    background-color: rgb(130, 125, 125);
+    color: black;
+    margin-top: 45px;
+    margin-left: 5px;
+    display: none;
+}
+.menushowed li{
+    padding: 15px;
+    border-bottom: solid 1px black;
+    cursor: pointer;
+}
+.menushowed li:nth-child(2){
+    border-bottom: none;
+}
+.menushowed li:hover{
+    background-color: black;
+    color: white;
 }

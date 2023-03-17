@@ -11,3 +11,6 @@ var container = document.querySelector(".container")
 
 
 $('.nav').load("../navbar/nav.html")
+$('.delete').click(function(){
+$('.menushowed').toggle()
+})
